@@ -4,6 +4,8 @@ import SpaIcon from '@mui/icons-material/Spa';
 import Badge from '@mui/material/Badge';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import Image from '../assets/image.jpeg';
+
 const StyledToolbar = styled(Toolbar)({
     display: 'flex',
     justifyContent: 'space-between',
@@ -50,10 +52,10 @@ export default function Navbar() {
                     <Badge badgeContent={2} color="error">
                         <NotificationsIcon />
                     </Badge >
-                    <Avatar src="public\image.jpeg" />
+                    <Avatar src={Image} />
                 </Icons>
                 <IconsMob onClick={e => setToggle(true)} sx={{ display: { xs: "flex", sm: "none" } }}>
-                    <Avatar src="public\image.jpeg" />
+                    <Avatar src={Image} />
                     <Typography>john</Typography>
                 </IconsMob>
             </StyledToolbar>

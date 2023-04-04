@@ -3,6 +3,7 @@ import React from 'react'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
+import Image from '../assets/imag.png'
 import { Favorite, FavoriteBorder } from '@mui/icons-material';
 export default function Post() {
     return (
@@ -21,20 +22,18 @@ export default function Post() {
                             <MoreVertIcon />
                         </IconButton>
                     }
-                    title="Shrimp and Chorizo Paella"
-                    subheader="September 14, 2016"
+                    title="Tittle"
+                    subheader={new Date().toLocaleDateString()}
                 />
                 <CardMedia
                     component="img"
                     height="20%"
-                    image=''
+                    image={Image}
                     alt="Paella dish"
                 />
                 <CardContent>
                     <Typography variant="body2" color="text.secondary">
-                        This impressive paella is a perfect party dish and a fun meal to cook
-                        together with your guests. Add 1 cup of frozen peas along with the mussels,
-                        if you like.
+                        User sayings
                     </Typography>
                 </CardContent>
                 <CardActions disableSpacing>
