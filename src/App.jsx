@@ -5,7 +5,6 @@ import Navbar from './Components/Navbar'
 import { Box, Stack, createTheme, ThemeProvider } from '@mui/material'
 import Add from './Components/Add'
 import { useState } from 'react'
-import { light } from '@mui/material/styles/createPalette'
 
 
 
@@ -19,7 +18,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darktheme}>
-      <Box bgcolor={"background.default"} color={"text.primary"} >
+      <Box bgcolor={"background.default"} color={"text.primary"} sx={{ maxWidth: 'fullWidth' }}>
         <Navbar />
         <Stack direction='row' justifyContent='space-between' justifyItems='center' spacing={2}>
           <Sidebar mode={mode} setMode={setMode} />
